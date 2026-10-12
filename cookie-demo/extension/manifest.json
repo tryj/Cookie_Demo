@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Demo Pro (Educational)",
+  "version": "2.0",
+  "description": "สำหรับการศึกษาเท่านั้น - ดึง cookie ครบถ้วนแบบ Cookie-Editor",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "tabs",
+    "storage",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Cookie Demo Pro"
+  }
+}

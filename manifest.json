@@ -1,0 +1,14 @@
+{
+  "name": "Cookie Test Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "cookies"
+  ],
+  "host_permissions": [
+    "*://*.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

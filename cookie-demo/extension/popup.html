@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 420px; font-family: system-ui, sans-serif; padding: 12px; margin: 0; }
+    h3 { margin: 0 0 10px; font-size: 14px; }
+    .row { display: flex; gap: 6px; margin-bottom: 8px; }
+    button { padding: 6px 10px; cursor: pointer; font-size: 12px; }
+    button.primary { background: #1a73e8; color: white; border: none; border-radius: 4px; }
+    button.secondary { background: #f1f3f4; border: 1px solid #dadce0; border-radius: 4px; }
+    #status { font-size: 12px; color: #333; margin: 8px 0; min-height: 16px; }
+    #log { font-size: 11px; background: #f5f5f5; padding: 8px; 
+           border-radius: 4px; max-height: 320px; overflow: auto; 
+           white-space: pre-wrap; font-family: ui-monospace, monospace;
+           border: 1px solid #e0e0e0; }
+    .summary { font-size: 11px; color: #555; margin-bottom: 6px; }
+    .ok { color: #0d652d; }
+    .err { color: #c5221f; }
+    .warn { color: #b06000; }
+  </style>
+</head>
+<body>
+  <h3>🍪 Cookie Demo Pro (Educational)</h3>
+  
+  <div class="row">
+    <button class="primary" id="grab">ดึง Cookie + ส่ง Server</button>
+    <button class="secondary" id="preview">Preview เท่านั้น</button>
+    <button class="secondary" id="clear">ล้าง Log</button>
+  </div>
+  
+  <div id="status">พร้อมทำงาน</div>
+  <div class="summary" id="summary"></div>
+  <div id="log"></div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
